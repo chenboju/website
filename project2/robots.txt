@@ -1,0 +1,12 @@
+# 禁止爬整個網站
+user-agent:*
+Disallow:/imges/
+
+user-agent:Googlebot-news
+Disallow:/imges/
+
+user-agent:*
+Allow:/images/
+
+user-agent:Googlebot-news
+Disallow:/*.xls$
