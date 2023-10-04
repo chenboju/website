@@ -1,0 +1,44 @@
+$themeColor: green;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: $themeColor;
+}
+
+h2 {
+  color: $themeColor;
+}
+
+//@import "./header";
+// 匯入scss檔案
+
+@mixin flexbox($direnction) {
+  // funtion功能
+  display: flex;
+  flex-direction: $direnction;
+}
+
+header {
+  nav {
+    ul {
+      @include flexbox(row);
+      flex-wrap: wrap;
+      li {
+        list-style-type: none;
+        a {
+          color: $themeColor;
+          text-decoration: none;
+          &:hover {
+            // &代表自己
+            color: aqua;
+          }
+        }
+      }
+    }
+  }
+}
