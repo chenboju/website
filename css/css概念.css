@@ -1,0 +1,34 @@
+/*inheritance 繼承*/
+/* body {
+  color: red;
+} */
+
+/* cascsding stylesheet 
+h1 {
+  color: aqua;
+}
+
+h1 {
+  color: blueviolet;
+}*/
+
+/* specific 特定度 */
+/* h1 {
+  color: antiquewhite;
+}
+#a {
+  color: aquamarine;
+}
+
+h2.b {
+  color: violet;
+}
+
+.b {
+  color: springgreen;
+} */
+
+/* 字前面留空白 */
+p {
+  text-indent: 2rem;
+}

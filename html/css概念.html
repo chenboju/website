@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css概念.css" />
+  </head>
+  <body>
+    <!-- css 選擇器有不同的 specificities 。
+    例如,選擇 id 比選擇 class 更 specific
+    ,所以當-個標籤有兩個具體程度不同的 css 選擇器時,它會取更 specific
+    (具體)的樣式並套用於標籤上面,而不考慮順序前後
+    1. id - specificity ( 1 , 0 , 0)
+    2 , class - specificity ( 0 , 1 , 0 )
+    3 , tag 一 specificity ( 0 , 0 , 1 ) -->
+
+    <h1 id="a">eojfriovjrivj</h1>
+
+    <h2 class="b">feihfewoihfoewhve</h2>
+
+    <h3>fjeiofjwofhewfohi</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tenetur
+      incidunt provident, accusantium voluptas accusamus, velit, dolorum dolorem
+      placeat ipsa animi vel sapiente similique possimus dolore perspiciatis
+      quam ratione. Obcaecati.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tenetur
+      incidunt provident, accusantium voluptas accusamus, velit, dolorum dolorem
+      placeat ipsa animi vel sapiente similique possimus dolore perspiciatis
+      quam ratione. Obcaecati.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tenetur
+      incidunt provident, accusantium voluptas accusamus, velit, dolorum dolorem
+      placeat ipsa animi vel sapiente similique possimus dolore perspiciatis
+      quam ratione. Obcaecati.
+    </p>
+  </body>
+</html>

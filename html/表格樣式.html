@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/表格樣式.css" />
+  </head>
+  <body>
+    <h2>基礎資訊</h2>
+    <table>
+      <tr>
+        <th colspan="3">國立博物院</th>
+        <!--colspan橫跨列數 rowspan行跨行數-->
+      </tr>
+      <tr>
+        <th>所屬部門</th>
+        <th>員額</th>
+        <th>授權</th>
+      </tr>
+      <tr>
+        <td>行政院</td>
+        <td>502人</td>
+        <td>監察院、監察院、監察院</td>
+      </tr>
+    </table>
+
+    <div style="overflow-x: auto">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">國立博物院</th>
+            <!--colspan橫跨列數 rowspan行跨行數-->
+          </tr>
+          <tr>
+            <th>所屬部門</th>
+            <th>員額</th>
+            <th>授權</th>
+            <th>所屬部門</th>
+            <th>員額</th>
+            <th>授權</th>
+            <th>所屬部門</th>
+            <th>員額</th>
+            <th>授權</th>
+            <th>所屬部門</th>
+            <th>員額</th>
+            <th>授權</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>行政院</td>
+            <td>502人</td>
+            <td>監察院、監察院'監察院</td>
+            <td>行政院</td>
+            <td>502人</td>
+            <td>監察院、監察院'監察院</td>
+            <td>行政院</td>
+            <td>502人</td>
+            <td>監察院、監察院'監察院</td>
+            <td>行政院</td>
+            <td>502人</td>
+            <td>監察院、監察院'監察院</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Responsive Table</h2>
+    <p>
+      If you have a table that is too wide, you can add a container element with
+      overflow-x:auto around the table, and it will display a horizontal scroll
+      bar when needed.
+    </p>
+    <p>
+      Resize the browser window to see the effect. Try to remove the div element
+      and see what happens to the table.
+    </p>
+
+    <div style="overflow-x: auto">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>Adam</td>
+          <td>Johnson</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

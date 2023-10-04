@@ -1,0 +1,10 @@
+h1:hover {
+  background-color: aqua;
+  color: aliceblue;
+}
+h1 {
+  /* transition: background-color 2s; */
+  transition: all 1s ease-in-out;
+  /* ease-funtion速度變化 */
+  /* transition: 0.5s; */
+}

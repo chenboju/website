@@ -1,0 +1,26 @@
+table,
+tr,
+td,
+th {
+  font-size: large;
+  border: 1px solid rgb(149, 0, 255);
+  /* border-collapse: separate; */
+  /* 每隔都會有獨立框 */
+  border-collapse: collapse;
+  /* 合併在一起 */
+  width: 100%;
+}
+tr:hover {
+  background-color: cadetblue;
+  cursor: pointer;
+  /* 滑鼠游標改變 */
+}
+tr,
+td {
+  margin: 20px;
+  padding: 20px;
+}
+h2 {
+  opacity: 0.2;
+  /* 不透明度 */
+}

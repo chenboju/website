@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>問卷調查</title>
+    <link rel="icon" href="./favicon.ico" />
+    <style>
+      input[type="text"] {
+        color: red;
+      }
+      /* pseudo-class 選擇器 */
+      input[type="text"]:hover {
+        color: green;
+      }
+      input[type="text"]:active {
+        color: blue;
+        /* 點擊變色 */
+      }
+      input[type="text"]:focus {
+        color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="名子">姓名:</label>
+      <input id="名子" type="text" name="姓名" />
+      <input type="button" />
+      <button type="submit">提交表單</button>
+      <!--sumbit交給後端-->
+      <!--buttom放在form裡預設是sumbit-->
+    </form>
+    <hr />
+    <form action="">
+      <label for="email">帳號</label>
+      <input id="email" type="text" />
+      <label for="pwd">密碼</label>
+      <input id="pwd" type="password" />
+      <!--password可隱藏密碼-->
+      <button type="submit">提交表單</button>
+    </form>
+
+    <hr />
+    <form action="" method="get">
+      <!--預設是get安全性不佳 適用於公開資料 會顯示在網址上-->
+      <label for="email">帳號</label>
+      <input id="email" type="text" />
+      <label for="pwd">密碼</label>
+      <input id="pwd" type="password" name="pwd" />
+      <!--password可隱藏密碼-->
+      <button type="submit">提交表單</button>
+    </form>
+
+    <hr />
+    <form action="" method="post">
+      <!--預設是POST 提供隱密資料或是像伺服器時用到-->
+      <label for="email">帳號</label>
+      <input id="email" type="text" minlength="5" maxlength="20" />
+      <label for="password">密碼</label>
+      <input id="password" type="password" minlength="8" maxlength="15" />
+      <!--password可隱藏密碼-->
+      <input type="checkbox" onclick="showpassword" id="show" />
+      <label for="">show password</label>
+      <script>
+        let checkbox = document.querySelector("#show");
+        let password = document.querySelector("#password");
+        checkbox.addEventListener("click", () => {
+          if (password.type == "password") {
+            password.type = "text";
+          } else {
+            password.type = "password";
+          }
+        });
+      </script>
+      <!--可顯示或隱藏密碼-->
+      <button type="submit">提交表單</button>
+      <!--buttom放在form裡預設是sumbit-->
+    </form>
+
+    <hr />
+    <form action="">
+      <!--預設是POST 提供隱密資料或是像伺服器時用到-->
+      <label for="name">姓名:</label>
+      <input id="name" type="text" name="姓名" placeholder="請輸入真實姓名" />
+
+      <br /><input type="checkbox" name="gender" value="male" id="male" />
+      <label for="male">男性</label>
+      <input type="checkbox" name="gender" value="male" id="female" />
+      <label for="female">女性</label>
+
+      <input type="radio" name="gender" value="male" id="male" required />
+      <label for="male">男性</label>
+      <input type="radio" name="gender" value="female" id="female" readonly />
+      <label for="female">女性</label>
+      <!--radio只能選一個，靠name判斷-->
+
+      <label for="gender">性別</label>
+      <select name="gender" id="gender" required>
+        <option value="">選擇</option>
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+        <option value="other">其他</option>
+      </select>
+
+      <br /><label for="信箱">信箱:</label>
+      <input type="email" id="信箱" name="email" required />
+      <!--required必填欄位-->
+      <br /><label for="年齡">年齡:</label>
+      <input
+        type="number"
+        id="年齡"
+        name="age"
+        min="0"
+        max="100"
+        value="18"
+        step="0.01"
+      /><!--step是指可調整的值，預設為1-->
+      <input id="電子報" type="checkbox" checked name="電子報" value="訂閱" />
+      <!--checked是預設打勾-->
+      <br /><label for="電子報">訂閱電子報</label>
+
+      <label for="area">地區</label>
+      <input list="area-list" type="text" name="area" id="area" />
+      <datalist id="area-list">
+        <option value="台北">台北</option>
+        <option value="桃園">桃園</option>
+        <option value="台中">台中</option>
+        <option value="台南">台南</option>
+        <option value="高雄">高雄</option>
+      </datalist>
+
+      <label for="suggestion">建議</label>
+      <textarea
+        name="suggestion"
+        id="suggestion"
+        cols="30"
+        rows="10"
+        placeholder="填寫建議"
+      ></textarea>
+      <button type="submit">提交表單</button>
+
+      <input type="file" />
+    </form>
+
+    <form action="">
+      <label for="年齡">年齡</label>
+      0<input type="range" min="0" max="100" step="20" name="age" />100
+    </form>
+
+    <button type="submit">這是一個按鈕</button>
+    <!--buttom放在form裡預設是sumbit-->
+
+    <form action="">
+      <label for="gender">性別</label>
+      <select name="gender" id="gender" required>
+        <option value="">選擇</option>
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+        <option value="other">其他</option>
+      </select>
+    </form>
+  </body>
+</html>

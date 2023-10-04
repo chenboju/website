@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+}
+body {
+  width: 500px;
+  height: 100%;
+}
+.test {
+  background-color: black;
+  height: 50%;
+}
+h1 {
+  background-color: red;
+  width: 50%;
+  /* 實習寬度為500的50% */
+  height: 500px;
+  text-align: center;
+  margin: 50px 20px;
+  font-size: 5rem;
+  padding: 100px;
+  /* 上右下左 */
+  border: 5px solid yellow;
+  border-radius: 50%;
+  /* solid實心外框 dotted點外框 */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-style */
+  /* border padding margin 皆可設置上下左右(top left....) */
+}
+
+/* overflow */
+/* visible 一 content 不會被修剪,可以呈現在元素框之外 (預設)
+hidden 一如果需要,內容將被剪裁以適合元素。不提供滾動條
+scroll- 如有必要,內容將被剪裁以適合填充框。瀏覽器顯示移動軸。 */
+p {
+  color: white;
+}
+.test {
+  width: 500px;
+  height: 500px;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  background-color: black;
+}

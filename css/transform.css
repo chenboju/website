@@ -1,0 +1,30 @@
+/*transform*/
+div.a {
+  height: 500px;
+  width: 500px;
+  background-color: black;
+  position: relative;
+}
+div.box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+
+  /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+  transition: all 0.5s;
+}
+div.box:hover {
+  /* transform: translate(-100px, -200px);
+    transition: all 2s; */
+
+  /* transform: rotate(45deg); */
+  /* transform: rotateX(180deg); */
+  /* 上下轉動 */
+  /* transform: rotateY(100deg); */
+
+  /* transform: scale(1.5); */
+}

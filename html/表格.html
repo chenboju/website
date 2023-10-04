@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        font-size: large;
+        border: 3px solid navajowhite;
+        border-collapse: separate;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table></table>
+    <tr></tr>
+    <!--table row 用於建構每一行-->
+    <th></th>
+    <!--table heading 標題-->
+    <td></td>
+    <!--table data 定義實際數據-->
+
+    <h2>基礎資訊</h2>
+    <table>
+      <tr>
+        <th colspan="3">國立博物院</th>
+        <!--colspan橫跨列數 rowspan行跨行數-->
+      </tr>
+      <tr>
+        <th>所屬部門</th>
+        <th>員額</th>
+        <th>授權</th>
+      </tr>
+      <tr>
+        <td>行政院</td>
+        <td>502人</td>
+        <td>監察院</td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">國立博物院</th>
+          <!--colspan橫跨列數 rowspan行跨行數-->
+        </tr>
+        <tr>
+          <th>所屬部門</th>
+          <th>員額</th>
+          <th>授權</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>行政院</td>
+          <td>502人</td>
+          <td>監察院</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

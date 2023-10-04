@@ -1,0 +1,56 @@
+/* *全部選取{
+  color: aquamarine;
+} */
+/* element  */
+/* p{
+  color: blue;
+} */
+
+/* id element */
+/* #a {
+  color: rgb(20, 80, 50);
+} */
+/* class element */
+/* .group-a {
+  font-size: 50px;
+}
+.large-a {
+  color: aqua;
+} */
+
+/* ul.large-a {
+  color: bisque;
+  background-color: blue;
+} */
+
+/*grouping select*/
+/* h1,
+h2 {
+  color: cadetblue;
+} */
+
+/* descendant select 後裔 */
+/*   */
+
+div.link1 a {
+  color: red;
+}
+
+div.link2 a {
+  color: blue;
+}
+
+/* pseudo element 偽元素 */
+/* p前面加東西 */
+/* p::before {
+  content: ">>";
+  color: black;
+} */
+/* 第一行放大*/
+/* p::first-line {
+  font-size: 40px;
+} */
+/* 選取區域變色 */
+/*  *::selection {
+  background-color: aqua;
+} */

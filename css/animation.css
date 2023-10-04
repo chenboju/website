@@ -1,0 +1,42 @@
+/*transform*/
+div.a {
+  height: 500px;
+  width: 500px;
+  background-color: black;
+  position: relative;
+}
+div.box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  position: relative;
+
+  /* animation-name: changecolor;
+  animation-duration: 0.5s; */
+  /* 變色的or移動過程時間 */
+  /* animation-delay: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* 維持更改的顏色 */
+  /* animation-iteration-count: infinite; */
+  /* 無限循環 */
+  /* animation-direction: reverse; */
+  /*倒著放*/
+  /* animation-direction: alternate; */
+  /* 來回播放or移動到原位在移回來 */
+
+  animation: changecolor 1s ease-in 0s infinite alternate forwards;
+  /* ease-funtion速度變化 */
+}
+
+@keyframes changecolor {
+  from {
+    background-color: gold;
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    background-color: red;
+    top: 400px;
+    left: 400px;
+  }
+}

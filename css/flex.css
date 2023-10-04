@@ -1,0 +1,62 @@
+div.container {
+  border: 3px solid black;
+  display: flex;
+  /* flex-direction: row; */
+  /* column-reverse 反向垂直 */
+  /* row-reverse    反向橫排 */
+
+  flex-wrap: wrap;
+  /* 寬度不夠自動換至下一行 */
+
+  /* justify-content: space-around; */
+  /* space-evenly 平分空間 */
+  /* space-between 頭尾填滿中間平分 */
+  /* space-around */
+
+  /* align-items: center; */
+
+  height: 1500px;
+
+  align-items: start;
+}
+
+.box {
+  /* width: 250px;
+  height: 250px; */
+
+  flex-basis: 200px;
+  /* 看flex-direction是哪決定寬還是高 */
+}
+
+.box1 {
+  background-color: aqua;
+
+  flex-grow: 1;
+  /* 將剩餘空間比例分配 */
+
+  /* align-self: center; */
+  /* 單獨調整位置，前提是父層要有align-item */
+}
+.box2 {
+  background-color: bisque;
+
+  flex-grow: 1;
+}
+.box3 {
+  background-color: blue;
+
+  flex-grow: 1;
+}
+.box4 {
+  background-color: violet;
+
+  flex-grow: 1;
+}
+.box5 {
+  background-color: seagreen;
+
+  flex-grow: 1;
+}
+/* .box6 {
+  background-color: red;
+} */

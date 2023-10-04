@@ -1,0 +1,71 @@
+div.container {
+  width: 500px;
+  height: 2000px;
+  background-color: black;
+  /* position: relative; */
+}
+.box {
+  width: 200px;
+  height: 200px;
+}
+.box1 {
+  background-color: aqua;
+  /* position: relative;
+  z-index: 0.5; */
+}
+.box2 {
+  background-color: red;
+  /* 離上方100px */
+  /* position: relative; */
+  /* top: 100px; */
+  /* 往左移100pxor離左邊100px(左邊會多出100px空間) */
+  /* left: 100px;
+  bottom: 100px; */
+  /* z-index: 1; */
+
+  /* position: absolute; */
+  /* 會一直尋找父層的position */
+  /* top: 0;
+  right: 0; */
+
+  /* position: fixed; */
+  /* 固定在頁面的某處不動，不須尋找父層 */
+  /* top: 300px;
+  left: 300px; */
+  /* bottom: 0; */
+  /* right: 0; */
+
+  /* 固定導覽列用法 */
+  /* position: sticky;
+  top: 0; */
+
+  position: relative;
+  z-index: 0;
+}
+.box3 {
+  background-color: blue;
+  /* 離底部50px */
+  /* position: relative;
+  bottom: 50px; */
+  /* z-index比大小決定 大在上 */
+  /* z-index: 2; */
+}
+
+.small-box {
+  width: 100px;
+  height: 100px;
+}
+.box4 {
+  background-color: orange;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+}
+.box5 {
+  background-color: rgb(237, 100, 221);
+  z-index: -5;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+}
